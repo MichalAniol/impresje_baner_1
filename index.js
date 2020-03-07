@@ -393,7 +393,7 @@ const cool_baner = {
 
         setTimeout(() => {
             cool_baner.coolDown = false;
-        }, 500);
+        }, 600);
     },
     left: item => {
         // console.log('%c right:', 'background: #ffcc00; color: #003300')
@@ -435,7 +435,7 @@ const cool_baner = {
 
         setTimeout(() => {
             cool_baner.coolDown = false;
-        }, 500);
+        }, 600);
     },
     click: (item, num) => {
         // console.log('%c num:', 'background: #ffcc00; color: #003300', num)
