@@ -357,8 +357,8 @@ const cool_baner = {
     },
     coolDown: false,
     right: item => {
-        // if (cool_baner.coolDown == true) { return }
-        // cool_baner.coolDown = true;
+        if (cool_baner.coolDown == true) { return }
+        cool_baner.coolDown = true;
         let bnr = item.closest('.cool_baner');
         let items = bnr.querySelectorAll('.cbnr_item');
         let many = cool_baner.showOne();
@@ -390,11 +390,15 @@ const cool_baner = {
             cool_baner.expandActiv(items);
             cool_baner.showItems(bnr, items);
         }, 20);
+
+        setTimeout(() => {
+            cool_baner.coolDown = false;
+        }, 500);
     },
     left: item => {
         // console.log('%c right:', 'background: #ffcc00; color: #003300')
-        // if (cool_baner.coolDown == true) { return }
-        // cool_baner.coolDown = true;
+        if (cool_baner.coolDown == true) { return }
+        cool_baner.coolDown = true;
         let bnr = item.closest('.cool_baner');
         let items = bnr.querySelectorAll('.cbnr_item');
         let many = cool_baner.showOne();
@@ -428,6 +432,10 @@ const cool_baner = {
             cool_baner.expandActiv(items);
             cool_baner.showItems(bnr, items);
         }, 20);
+
+        setTimeout(() => {
+            cool_baner.coolDown = false;
+        }, 500);
     },
     click: (item, num) => {
         // console.log('%c num:', 'background: #ffcc00; color: #003300', num)
