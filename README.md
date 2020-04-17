@@ -1,1 +1,1 @@
-https://michalaniol.github.io/impresje_baner_1
+https://confident-spence-16021a.netlify.app
